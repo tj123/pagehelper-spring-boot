@@ -25,37 +25,41 @@
 
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.github.pagehelper</groupId>
-        <artifactId>pagehelper-spring-boot</artifactId>
-        <version>1.1.2</version>
-    </parent>
-    <artifactId>pagehelper-spring-boot-samples</artifactId>
-    <packaging>pom</packaging>
-    <name>pagehelper-spring-boot-samples</name>
-    <modules>
-        <module>pagehelper-spring-boot-sample-annotation</module>
-        <module>pagehelper-spring-boot-sample-xml</module>
-    </modules>
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>ognl</groupId>
-                <artifactId>ognl</artifactId>
-                <version>3.1.2</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>javassist</groupId>
-                        <artifactId>javassist</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <version>3.20.0-GA</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.github.tj123</groupId>
+    <artifactId>pagehelper-spring-boot</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  
+  <artifactId>pagehelper-spring-boot-samples</artifactId>
+  
+  <packaging>pom</packaging>
+  <name>pagehelper-spring-boot-samples</name>
+  
+  <modules>
+    <module>pagehelper-spring-boot-sample-annotation</module>
+    <module>pagehelper-spring-boot-sample-xml</module>
+  </modules>
+  <dependencyManagement>
+    
+    <dependencies>
+      <dependency>
+        <groupId>ognl</groupId>
+        <artifactId>ognl</artifactId>
+        <version>3.1.2</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.20.0-GA</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>

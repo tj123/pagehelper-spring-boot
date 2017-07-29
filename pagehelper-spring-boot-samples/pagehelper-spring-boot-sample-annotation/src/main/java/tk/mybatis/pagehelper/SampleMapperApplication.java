@@ -24,37 +24,28 @@
 
 package tk.mybatis.pagehelper;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageHelper;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import tk.mybatis.pagehelper.domain.Country;
-import tk.mybatis.pagehelper.mapper.CountryMapper;
-
-import java.util.List;
 
 @MapperScan(basePackages = "tk.mybatis.pagehelper")
 @SpringBootApplication
-public class SampleMapperApplication implements CommandLineRunner {
+public class SampleMapperApplication /*implements CommandLineRunner*/ {
 
-    @Autowired
-    private CountryMapper countryMapper;
+//    @Autowired
+//    private CountryMapper countryMapper;
 
     public static void main(String[] args) {
         SpringApplication.run(SampleMapperApplication.class, args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        PageHelper.startPage(1, 20);
-        List<Country> countries = countryMapper.findAll();
-        System.out.println("Total: " + ((Page) countries).getTotal());
-        for (Country country : countries) {
-            System.out.println("Country Name: " + country.getCountryname());
-        }
-    }
+//    public void run(String... args) throws Exception {
+//        PageHelper.startPage(1, 20);
+//        List<Country> countries = countryMapper.findAll();
+//        System.out.println("Total: " + ((Page) countries).getTotal());
+//        for (Country country : countries) {
+//            System.out.println("Country Name: " + country.getCountryname());
+//        }
+//    }
 
 }

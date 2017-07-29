@@ -45,7 +45,6 @@ public class SampleXmlApplication implements CommandLineRunner {
         SpringApplication.run(SampleXmlApplication.class, args);
     }
 
-    @Override
     public void run(String... args) throws Exception {
         PageHelper.startPage(1, 20);
         List<Country> countries = countryMapper.selectAll();

@@ -12,11 +12,15 @@ Support PageHelper 5.x
 Add the following dependency to your pom.xml: 
 ```xml
 <dependency>
-    <groupId>com.github.pagehelper</groupId>
+    <groupId>com.github.tj123</groupId>
     <artifactId>pagehelper-spring-boot-starter</artifactId>
-    <version>1.1.2</version>
+    <version>0.0.1</version>
 </dependency>
 ```
+## v0.0.1 新版本的 只能使用 pagehelper 5.0 以上版本 
+
+    此版本使用  4.2.1 版本 支持 排序
+
 
 ## v1.1.2 - 2017-06-28 by [drtrang](https://github.com/drtrang)
 
