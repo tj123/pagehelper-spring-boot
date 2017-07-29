@@ -105,13 +105,13 @@
       </dependency>
       
       <dependency>
-        <groupId>com.github.pagehelper</groupId>
+        <groupId>com.github.tj123</groupId>
         <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
         <version>${project.version}</version>
       </dependency>
       
       <dependency>
-        <groupId>com.github.pagehelper</groupId>
+        <groupId>com.github.tj123</groupId>
         <artifactId>pagehelper-spring-boot-starter</artifactId>
         <version>${project.version}</version>
       </dependency>
